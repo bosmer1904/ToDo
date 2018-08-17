@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    min-width: 250px;
+}
+
+.header {
+    text-align: center;
+    padding: 30px 40px;
+    background-color: #0e6389;
+    color: #f4f4f4;
+}
+
+.header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+}
+
+
+.addBtn {
+    float: left;
+    background-color: #d9d9d9;
+    margin: 0 0 0 -40px;
+    font-size: 16px;
+    width: 25%;
+    padding: 10px;
+    transition: 0.5s;
+    color: #555555;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+input#taskInput{
+    float: left;
+    padding: 10px;
+    font-size: 16px;
+    width: 75%;
+    margin: 0 ;
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    position: relative;
+    padding: 15px 15px 15px 30px;
+    background-color: #b9bcbd;
+
+}
+
+ul li:hover {
+    background-color: #868686;
+}
+
+ul li.completed {
+    text-decoration: line-through;
+}
+
+ul li:nth-child(even) {
+    background-color: #9c9c9c;
+}
+
+ul li input[type='checkbox'] {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+ul li input[type="text"] {
+    display: none;
+}
+
+
+ul li.editMode input[type="text"] {
+    display: block;
+}
+
+ul li.editMode {
+    text-decoration: none;
+}
+
+ul li.editMode label {
+    display: none;
+}
+
+
+.editBtn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.editBtn:hover {
+    color: #a8000f;
+}
+
+.deleteBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    color: #a8000f;
+}
